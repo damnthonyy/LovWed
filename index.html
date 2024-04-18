@@ -6,16 +6,108 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>LovWed</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/navbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Css/reset.css'>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
 
 </head>
 
 <body>
+    <div id="nav-bar">
+        <div class="logo-wrapper">
+            <a href="hero" alt="logo" class="logo">
+                LoWed
+            </a>
+        </div>
+        <div class="btn-menu">
+            <a href="#" alt="menu" class="wrapper open">
+                <a class="text">Menu</a>
+            </a>
+        </div>
+        <div class="nav-link-overlay">
+            <div class="btn-fermer">
+                <a href="#" alt="menu" class="wrapper close">
+                    <a class="text">Fermer</a>
+                </a>
+            </div>
+            <div class="nav-link">
+                <a href="#" alt="link" class="link" data-image="Media/img-7.jpg">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.6549 37.8453C12.004 37.1943 12.004 36.139 12.6549 35.4883L34.8098 13.3333H20.5001C19.5796 13.3333 18.8334 12.5871 18.8334 11.6667C18.8334 10.7462 19.5796 10 20.5001 10H38.8334C39.2754 10 39.6994 10.1756 40.0121 10.4882C40.3244 10.8007 40.5001 11.2246 40.5001 11.6667V30C40.5001 30.9205 39.7538 31.6667 38.8334 31.6667C37.9131 31.6667 37.1668 30.9205 37.1668 30V15.6904L15.0119 37.8453C14.3611 38.496 13.3058 38.496 12.6549 37.8453Z"
+                                fill="#686868" />
+                        </svg>
+                    </span>
+                    About
+                </a>
+                <a href="#" alt="link" class="link" data-image="Media/img-10.jpg">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.6549 37.8453C12.004 37.1943 12.004 36.139 12.6549 35.4883L34.8098 13.3333H20.5001C19.5796 13.3333 18.8334 12.5871 18.8334 11.6667C18.8334 10.7462 19.5796 10 20.5001 10H38.8334C39.2754 10 39.6994 10.1756 40.0121 10.4882C40.3244 10.8007 40.5001 11.2246 40.5001 11.6667V30C40.5001 30.9205 39.7538 31.6667 38.8334 31.6667C37.9131 31.6667 37.1668 30.9205 37.1668 30V15.6904L15.0119 37.8453C14.3611 38.496 13.3058 38.496 12.6549 37.8453Z"
+                                fill="#686868" />
+                        </svg>
+                    </span>
+                    service provision
+                </a>
+                <a href="#" alt="link" class="link" data-image="Media/img-5.jpg">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.6549 37.8453C12.004 37.1943 12.004 36.139 12.6549 35.4883L34.8098 13.3333H20.5001C19.5796 13.3333 18.8334 12.5871 18.8334 11.6667C18.8334 10.7462 19.5796 10 20.5001 10H38.8334C39.2754 10 39.6994 10.1756 40.0121 10.4882C40.3244 10.8007 40.5001 11.2246 40.5001 11.6667V30C40.5001 30.9205 39.7538 31.6667 38.8334 31.6667C37.9131 31.6667 37.1668 30.9205 37.1668 30V15.6904L15.0119 37.8453C14.3611 38.496 13.3058 38.496 12.6549 37.8453Z"
+                                fill="#686868" />
+                        </svg>
+                    </span>
+                    realization
+                </a>
+                <a href="#" alt="link" class="link" data-image="Media/img-4.jpg">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.6549 37.8453C12.004 37.1943 12.004 36.139 12.6549 35.4883L34.8098 13.3333H20.5001C19.5796 13.3333 18.8334 12.5871 18.8334 11.6667C18.8334 10.7462 19.5796 10 20.5001 10H38.8334C39.2754 10 39.6994 10.1756 40.0121 10.4882C40.3244 10.8007 40.5001 11.2246 40.5001 11.6667V30C40.5001 30.9205 39.7538 31.6667 38.8334 31.6667C37.9131 31.6667 37.1668 30.9205 37.1668 30V15.6904L15.0119 37.8453C14.3611 38.496 13.3058 38.496 12.6549 37.8453Z"
+                                fill="#686868" />
+                        </svg>
+                    </span>
+                    Contacts
+                </a>
+            </div>
+            <div class="nav-pic ">
+                <img src="Media/img-7.jpg" alt="img" class="img" />
+                <img src="Media/img-10.jpg" alt="img" class="img" />
+                <img src="Media/img-5.jpg" alt="img" class="img" />
+                <img src="Media/img-4.jpg" alt="img" class="img" />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero">
+        <div class="text-hero-position">
+            <div class="text-hero">
+                <span class="title-hero">
+                    LovWed
+                </span>
+                <span class="description-hero">
+                    Taste the love, savor every moment – ​​your special day served with passion.
+                </span>
+                <span class="Contact-us">
+                    Contact us
+                </span>
+            </div>
+        </div>
+    </div>
 
 
 
-
-    <script src='Js/'></script>
+    <script src='Js/gsap/components/navbar.js'></script>
 </body>
 
 </html>

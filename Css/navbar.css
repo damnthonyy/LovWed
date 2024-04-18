@@ -1,0 +1,223 @@
+#nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--bg-color-white);
+}
+
+.logo-wrapper {
+    grid-column: 1;
+    padding-left: var(--padding-left);
+
+    & .logo {
+        font-family: var(--font);
+        font-size: var(--size-logo-d);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -4.48px;
+        color: var(--color-black);
+    }
+}
+
+.btn-menu {
+    grid-column: 16;
+    padding-right: var(--padding-right);
+
+    & .text {
+        font-family: var(--font);
+        font-size: var(--p);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--color-grey);
+        cursor: pointer;
+    }
+}
+
+.btn-fermer {
+    grid-column: 2/ span 1;
+    grid-row: 2/span 1;
+
+
+
+    & .text {
+        font-family: var(--font);
+        font-size: var(--p);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--color-grey);
+        cursor: pointer;
+    }
+}
+
+.btn-menu:hover {
+    grid-column: 16;
+    padding-right: var(--padding-right);
+    text-decoration: underline;
+
+    & .text {
+        font-family: var(--font);
+        font-size: var(--p);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--color-grey);
+        cursor: pointer;
+    }
+}
+
+.hero {
+    background: url(../Media/img-1.jpg) lightgray 50% / cover no-repeat;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.text-hero-position {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    right: 0;
+}
+
+.text-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.title-hero {
+    font-family: var(--font);
+    font-size: var(--title-hero);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-white);
+}
+
+.description-hero {
+    font-family: var(--font);
+    font-size: var(--p);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-white);
+}
+
+.Contact-us {
+    font-family: var(--font);
+    font-size: var(--p);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-white);
+}
+
+.nav-link-overlay {
+    z-index: 1;
+    position: absolute;
+    top: -100vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    display: grid;
+    grid-template-columns: repeat(var(--rules-columns), 1fr);
+    grid-template-rows: repeat(9, 80px);
+    grid-gap: var(--gutier-columns);
+    transition: ease-in-out 1s;
+    /* padding-left: var(--padding-left);
+    padding-right: var(--padding-right); */
+}
+
+.nav-link-overlay.isActive {
+    background-color: var(--bg-color-white);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(var(--rules-columns), 1fr);
+    grid-template-rows: repeat(9, 80px);
+    grid-gap: var(--gutier-columns);
+    /* padding-left: var(--padding-left);
+    padding-right: var(--padding-right); */
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    grid-column: 3/ span 6;
+    grid-row: 3;
+    height: 100vh;
+}
+
+.link {
+    display: flex;
+    gap: 22px;
+    align-self: stretch;
+    font-family: var(--font);
+    font-size: var(--n-link-desktop);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+    opacity: 0.5;
+}
+
+.link:hover {
+    display: flex;
+    gap: 22px;
+    align-self: stretch;
+    font-family: var(--font);
+    font-size: var(--n-link-desktop);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.nav-pic {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    grid-column: 10/ span 16;
+    background-color: var(--color-grey);
+
+
+    & .img {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+}
+
+.nav-pic .img:first-child {
+    opacity: 1;
+}

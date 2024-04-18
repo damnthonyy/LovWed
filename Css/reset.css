@@ -1,0 +1,36 @@
+.arimo-uniquifier {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+:root {
+    --padding-left: 90px;
+    --padding-right: 90px;
+    --rules-columns: 16;
+    --gutier-columns: 20px;
+    --bg-color-black: #000000;
+    --bg-color-white: #FFFF;
+    --color-white: white;
+    --color-black: black;
+    --color-grey: #767676;
+
+
+    --title-hero: 128px;
+    --n-link-desktop: 45px;
+    --size-logo-d: 32px;
+    --p: 16px;
+    --p-1: 14px;
+
+    --font: "Arimo", sans-serif;
+}
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
