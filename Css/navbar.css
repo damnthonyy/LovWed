@@ -1,5 +1,5 @@
 #nav-bar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -205,7 +205,7 @@
     overflow: hidden;
 
     grid-column: 10/ span 16;
-    background-color: var(--color-grey);
+    /* background-color: var(--color-grey); */
 
 
     & .img {
