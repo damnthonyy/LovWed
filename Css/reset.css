@@ -18,6 +18,7 @@
 
 
     --title-hero: 128px;
+    --title-pl-c: 88px;
     --n-link-desktop: 45px;
     --title-hero-s: 56px;
     --size-logo-d: 32px;
@@ -34,8 +35,4 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    height: 8000px;
 }

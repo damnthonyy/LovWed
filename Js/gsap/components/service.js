@@ -4,6 +4,7 @@ const $textHero = document.querySelector('.s-hero-text');
 const $gallery = gsap.utils.toArray('.gallery-services .gallery-img');
 const $imgHero = document.querySelector('.gallery-img');
 const $service = document.getElementById('service');
+const $provision = document.querySelector('.service-provision');
 
 
 gsap.to($textHero, {
@@ -13,7 +14,14 @@ gsap.to($textHero, {
         start: "50% 50%",
         end: "bottom 70%",
         pin: true,
-        /* delay: 1, */
+        toggleAction: "play reverse play reverse",
+        onLeave: () => {
+            animation: gsap.to($textHero, { opacity: 0 });
+        },
+        onEnterBack: () => {
+            // Jouer l'animation lorsque l'utilisateur revient en arrière et entre à nouveau
+            gsap.to($textHero, { opacity: 1 });
+        },
 
     }
 })
@@ -30,5 +38,18 @@ $gallery.forEach(($imgHero, index) => {
 
 });
 
-/* start: '40% 50%',
-    end: '40% 10%', */
+
+gsap.to($provision, {
+    opacity: 1,
+    scrollTrigger: {
+
+        trigger: $provision,
+        markers: false,
+        start: '20% 50%',
+        end: 'bottom 50%',
+        toggleAction: "play reverse play reverse",
+        /* scrub: true, */
+    }
+
+})
+
