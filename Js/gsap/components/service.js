@@ -22,10 +22,13 @@ $gallery.forEach(($imgHero, index) => {
     ScrollTrigger.create({
         trigger: $service,
         markers: false,
-        start: '40% 50%',
-        end: '40% 10%',
-        scrub: true,
+        start: "50% 50%",
+        end: "bottom 70%",
+        scrub: 0.5,
         animation: gsap.to($imgHero, { y: '-100vh' }),
     })
 
 });
+
+/* start: '40% 50%',
+    end: '40% 10%', */
