@@ -18,7 +18,7 @@ const $text = document.querySelector('.details-ceo');
 gsap.to($text, {
     scrollTrigger: {
         trigger: $about,
-        markers: true,
+        markers: false,
         start: " 30% top",
 
     },
