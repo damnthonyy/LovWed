@@ -81,7 +81,7 @@
     font-weight: 400;
     line-height: 200%;
     /* 28px */
-    letter-spacing: 0.168px;
+    /*  letter-spacing: 0.168px; */
     text-align: justify;
-    color: var(--color-grey);
+    color: var(--color-black);
 }

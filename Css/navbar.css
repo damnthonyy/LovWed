@@ -183,6 +183,9 @@
     line-height: normal;
     color: var(--color-black);
     opacity: 0.5;
+    cursor:
+        /* url(../Media/atom.svg) */
+        pointer;
 }
 
 .link:hover {
